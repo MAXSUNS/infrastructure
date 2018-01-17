@@ -14,11 +14,4 @@ public class InfrastructureApplication {
 	}
 
 
-//	@Bean
-//	public EmbeddedServletContainerFactory servletContainer() {
-//		JettyEmbeddedServletContainerFactory factory =
-//				new JettyEmbeddedServletContainerFactory();
-//		return factory;
-//	}
-
 }
