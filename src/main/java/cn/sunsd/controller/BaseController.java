@@ -1,13 +1,12 @@
 package cn.sunsd.controller;
 
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.annotation.Resource;
-import javax.ws.rs.*;
-import javax.ws.rs.core.MediaType;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+
 
 /**
  * Created by sund on 2018/1/5.
@@ -15,8 +14,10 @@ import javax.ws.rs.core.MediaType;
 @RestController
 public class BaseController {
 
-    @RequestMapping("/hello")
-    public String applyZhongAnInsurance(String a) {
-        return "test";
+    @RequestMapping(value = "/hello" ,method = RequestMethod.GET)
+    public String applyZhongAnInsurance(HttpServletRequest a) {
+        return "test123";
     }
+
+
 }

@@ -1,0 +1,14 @@
+/**
+ * Created by sund on 2018/1/22.
+ */
+server:
+    port: 8081
+spring.datasource:
+    url:
+    username:
+    password:
+    driverClassName: com.mysql.jdbc.Driver
+    name: dataSource
+spring:
+  profiles:
+    active: qa
